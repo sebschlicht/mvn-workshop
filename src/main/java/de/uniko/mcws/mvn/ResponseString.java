@@ -1,5 +1,7 @@
 package de.uniko.mcws.mvn;
 
+import javax.servlet.http.HttpServletRequest;
+
 
 public class ResponseString {
 
@@ -18,7 +20,7 @@ public class ResponseString {
 	}
 
 	public String toString() {
-		return (this.id == 0) ? "Hello World!" : "nope.";
+		return (this.id != 0) ? "Hello World!" : "nope.";
 	}
 
 }
