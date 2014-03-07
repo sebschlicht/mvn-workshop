@@ -1,5 +1,6 @@
 package de.uniko.mcws.mvn;
 
+import javax.servlet.http.HttpServletRequest;
 
 public class ResponseString {
 
