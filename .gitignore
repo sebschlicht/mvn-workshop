@@ -1,7 +1,5 @@
-.settings/
 .classpath
+.settings/
 .project
-
 target/
-
 *~

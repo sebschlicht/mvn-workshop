@@ -4,12 +4,12 @@
   <artifactId>mvn-workshop</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
-  <extensions>
-  <extension>
+  	<extensions>
+  	<extension>
   <groupId>org.apache.maven.wagon</groupId>
   <artifactId>wagon-ssh</artifactId>
 </extension>
-  </extensions>
+  	</extensions>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -38,7 +38,7 @@
   <artifactId>tomcat-maven-plugin</artifactId>
   <configuration>
     <url>http://127.0.0.1:8080/manager/text</url>
-    <server>tomcat</server>
+    <server>tomcat-server</server>
     <path>/mvn-workshop</path>
   </configuration>
 </plugin>
@@ -57,11 +57,10 @@
   <version>2.1</version>
   <scope>provided</scope>
 </dependency>
-  	
   </dependencies>
   <packaging>war</packaging>
   <distributionManagement>
-    <repository>
+  <repository>
   <id>metalcon-repo</id>
   <uniqueVersion>false</uniqueVersion>
   <name>Metalcon Repository</name>
@@ -70,3 +69,4 @@
 </repository>
   </distributionManagement>
 </project>
+
