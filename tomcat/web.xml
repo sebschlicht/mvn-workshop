@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee">
+<display-name>Metalcon Maven Workshop</display-name>
+  <servlet>
+    <servlet-name>Default</servlet-name>
+    <description>None</description>
+    <servlet-class>de.uniko.mcws.mvn.HalloWelt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Default</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+</web-app>
